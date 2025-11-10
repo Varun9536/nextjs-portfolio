@@ -52,7 +52,7 @@ export default function Home() {
         <div className={styles.pageWrapper}>
             {/* Header */}
             <header className={styles.header}>
-                <h1 className={styles.title}>Varun Kumar</h1>
+                <h1 className={styles.title}>Varunn Kumar</h1>
                 <p className={styles.subtitle}>Full-Stack Developer (MERN) • Software Engineer at Eice Technology PVT. LTD</p>
                 <p className={styles.tagline}>{years} year{years !== 1 ? "s" : ""} {months} month{months !== 1 ? "s" : ""} of experience · India</p>
             </header>
