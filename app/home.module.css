@@ -18,28 +18,23 @@
 /* ========================= BACKGROUND ========================= */
 .pageWrapper {
   min-height: 100vh;
-  /* background: linear-gradient(135deg, var(--bg1), var(--bg2));
-  background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
-  background: linear-gradient(135deg, #4f46e5 0%, #ec4899 100%);
-  background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%); */
+  
   background: linear-gradient(135deg, #fff1eb 0%, #ace0f9 100%);
-  /* background: linear-gradient(140deg, #a18cd1 0%, #fbc2eb 100%); */
-
-
-
-
-
+  
   background-attachment: fixed;
   background-size: 200% 200%;
-  animation: softGradient 12s ease-in-out infinite;
-
+ 
   padding: 50px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Inter", sans-serif;
   color: var(--text-dark);
-  animation: fadeScreen 0.8s ease-in-out;
+  
+
+  animation:
+    softGradient 12s ease-in-out infinite,
+    fadeScreen 0.8s ease-in-out;
 }
 
 @keyframes softGradient {
@@ -117,13 +112,7 @@
 }
 
 /* ========================= SKILLS GRID ========================= */
-.skillsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px;
-  list-style: none;
-  padding-left: 0;
-}
+
 
 .skillsGrid li {
   background: #f8fafc;
@@ -141,6 +130,55 @@
   color: #fff;
   transform: translateY(-6px);
   box-shadow: 0 10px 22px rgba(79, 70, 229, 0.35);
+}
+
+
+/* Skills Layout */
+.skillsWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Skill Card */
+.skillCard {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skillCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+.skillHeading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: #111827;
+}
+
+/* Description */
+.skillDescription {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* Skill Grid */
+.skillsGrid {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
 }
 
 /* ========================= PROJECT LIST ========================= */
@@ -175,4 +213,25 @@
   font-size: 14px;
   text-align: center;
   padding-bottom: 20px;
+}
+
+
+
+
+/* Individual Skill Chip */
+
+
+/* Mobile Optimization */
+@media (max-width: 640px) {
+  .skillCard {
+    padding: 1.2rem;
+  }
+
+  .skillHeading {
+    font-size: 1.05rem;
+  }
+
+  .skillDescription {
+    font-size: 0.9rem;
+  }
 }
