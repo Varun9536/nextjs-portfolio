@@ -1,0 +1,165 @@
+export const skills = {
+  languages: [
+    { name: "JavaScript", level: 95 },
+    { name: "TypeScript", level: 90 },
+    { name: "C++", level: 80 },
+    { name: "C", level: 78 },
+    { name: "Python", level: 72 },
+    { name: "PHP", level: 75 },
+    { name: "HTML", level: 98 },
+    { name: "CSS", level: 95 },
+  ],
+  frontend: [
+    { name: "React.js", level: 95 },
+    { name: "Next.js", level: 90 },
+    { name: "React Native", level: 78 },
+    { name: "Electron.js", level: 85 },
+    { name: "Tailwind CSS", level: 88 },
+    { name: "Redux", level: 80 },
+  ],
+  backend: [
+    { name: "Node.js", level: 92 },
+    { name: "Express.js", level: 90 },
+    { name: "Nest.js", level: 78 },
+    { name: "REST APIs", level: 95 },
+    { name: "WebSockets", level: 75 },
+    { name: "JWT Auth", level: 88 },
+  ],
+  databases: [
+    { name: "MongoDB", level: 88 },
+    { name: "MySQL", level: 85 },
+    { name: "Mongoose ODM", level: 87 },
+    { name: "SQL Queries", level: 82 },
+  ],
+  devops: [
+    { name: "Nginx", level: 80 },
+    { name: "PM2", level: 85 },
+    { name: "CI/CD Pipelines", level: 78 },
+    { name: "VPS Deployment", level: 85 },
+    { name: "Git & GitHub", level: 92 },
+    { name: "Linux", level: 80 },
+    { name: "Docker", level: 65 },
+  ],
+};
+
+export const projects = [
+  {
+    id: "01",
+    tag: "Enterprise · Desktop",
+    emoji: "🛡️",
+    title: "Govdrive",
+    subtitle: "Government-grade secure file management",
+    desc: "A desktop application for secure file handling built for government use. Features offline access, sandboxed environment, AES encrypted local storage, and cross-platform packaging. Designed for high security and reliability in critical environments.",
+    tech: ["Electron.js", "Node.js", "AES Encryption", "Cross-platform", "Secure Storage"],
+    featured: true,
+    highlight: "Government Deployment",
+  },
+  {
+    id: "02",
+    tag: "Government · Secure",
+    emoji: "🔐",
+    title: "NIC Govdrive",
+    subtitle: "Official NIC hardened file system",
+    desc: "Enhanced security-focused version of Govdrive built for official NIC deployment. Features multi-level restricted access, protected storage partitions, full audit log trails, and deep system-level OS integration.",
+    tech: ["Electron.js", "Node.js", "Audit Logs", "Access Control", "System Integration"],
+    featured: true,
+    highlight: "NIC Official",
+  },
+  {
+    id: "03",
+    tag: "Cloud · React",
+    emoji: "☁️",
+    title: "Isync Drive",
+    subtitle: "Cloud file sync & management platform",
+    desc: "Modern cloud sync interface for managing files across multiple devices. Includes secure JWT authentication, smooth drag-and-drop file operations, responsive UI, and optimised virtual rendering for large file lists.",
+    tech: ["React.js", "Node.js", "MongoDB", "JWT Auth", "REST API"],
+    featured: false,
+    highlight: "Multi-device Sync",
+  },
+  {
+    id: "04",
+    tag: "Booking · PHP",
+    emoji: "🏛️",
+    title: "Durgabari",
+    subtitle: "Temple & hall booking management system",
+    desc: "Complete management system with online reservations, automated email confirmations, admin panel, payment record tracking, and event scheduling. Handles concurrent bookings with conflict prevention logic.",
+    tech: ["PHP", "MySQL", "SMTP Email", "Admin Panel", "Payment Tracking"],
+    featured: false,
+    highlight: "Full Booking System",
+  },
+  {
+    id: "05",
+    tag: "Corporate · Web",
+    emoji: "🌐",
+    title: "Company Website",
+    subtitle: "Eice Technology corporate site",
+    desc: "Fully responsive corporate website with optimised Core Web Vitals, custom React components, smooth scroll animations, SEO-friendly meta structure, and API-driven dynamic content sections.",
+    tech: ["React.js", "Next.js", "SEO", "Animations", "API Integration"],
+    featured: false,
+    highlight: "90+ Lighthouse Score",
+  },
+];
+
+export const experience = [
+  {
+    company: "Eice Technology Pvt. Ltd.",
+    role: "Software Engineer — Full-Stack Developer",
+    period: "April 2024 — Present",
+    live: true,
+    desc: "Working across a broad range of client applications and internal systems. Responsible for architecting and building React and Electron apps, designing RESTful backend APIs, setting up automated CI/CD pipelines, and managing VPS deployments with zero-downtime strategies.",
+    achievements: [
+      "Delivered 5+ production systems across hotel, restaurant, retail, bar, parking & enterprise sectors",
+      "Built two government-grade secure desktop apps (Govdrive & NIC Govdrive) with encryption & audit logs",
+      "Set up automated CI/CD pipelines reducing deployment time by 60%",
+      "Architected scalable Node.js backends serving real-time data to multiple clients",
+      "Led end-to-end development from UI design to VPS deployment with Nginx & PM2",
+    ],
+    tags: ["React", "Electron", "PHP", "Node.js", "MongoDB", "MySQL", "CI/CD", "Nginx", "PM2", "TypeScript", "Next.js"],
+  },
+];
+
+export const stats = [
+  { value: "5+", label: "Projects Shipped", icon: "🚀" },
+  { value: "17+", label: "Technologies", icon: "⚡" },
+  { value: "2", label: "Govt. Apps Built", icon: "🛡️" },
+  { value: "100%", label: "On-time Delivery", icon: "✅" },
+];
+
+export const services = [
+  {
+    icon: "🖥️",
+    title: "Full-Stack Web Apps",
+    desc: "End-to-end web applications with React/Next.js frontends and Node.js/Express backends. From database design to deployment.",
+    tags: ["React", "Next.js", "Node.js", "MongoDB", "MySQL"],
+  },
+  {
+    icon: "🖱️",
+    title: "Desktop Applications",
+    desc: "Cross-platform desktop apps with Electron.js. Offline support, secure local storage, auto-updates, and OS-level integrations.",
+    tags: ["Electron.js", "Node.js", "Auto-update", "Cross-platform"],
+  },
+  {
+    icon: "📱",
+    title: "Mobile Apps (React Native)",
+    desc: "iOS & Android apps with shared codebase using React Native. Native performance with JavaScript flexibility.",
+    tags: ["React Native", "iOS", "Android", "REST API"],
+  },
+  {
+    icon: "🔧",
+    title: "Backend & APIs",
+    desc: "Scalable RESTful APIs, real-time WebSocket servers, JWT authentication, database design and optimisation.",
+    tags: ["Node.js", "Express", "Nest.js", "REST", "WebSocket"],
+  },
+  {
+    icon: "🚀",
+    title: "DevOps & Deployment",
+    desc: "VPS server setup, Nginx reverse proxy config, PM2 process management, CI/CD pipelines, and zero-downtime deployments.",
+    tags: ["Nginx", "PM2", "CI/CD", "VPS", "Linux"],
+  },
+  {
+    icon: "🗄️",
+    title: "Database Design",
+    desc: "Schema design, query optimisation, indexing strategies for both SQL (MySQL) and NoSQL (MongoDB) databases.",
+    tags: ["MongoDB", "MySQL", "Mongoose", "Query Optimization"],
+  },
+];

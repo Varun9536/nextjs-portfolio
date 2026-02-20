@@ -1,23 +1,24 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-
+import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
-
-
 
 export const metadata: Metadata = {
   title: "Varun Kumar — Full-Stack Developer (MERN) | Software Engineer",
   description:
     "Varun Kumar is a full-stack MERN developer and software engineer with expertise in React, Next.js, Node.js, PHP, Electron, MySQL, and scalable backend systems.",
+
   keywords: [
     "Varun Kumar",
     "Full Stack Developer",
@@ -27,12 +28,24 @@ export const metadata: Metadata = {
     "Software Engineer",
     "Node.js Developer",
     "Portfolio",
+    "Varun",
+    "varun developer",
+    "varun eice technology",
+    "MERN",
+    "React",
+    "Node.js",
+    "Electron",
+    "Next.js",
+    "TypeScript",
+    "India",
   ],
+
   authors: [{ name: "Varun Kumar" }],
   creator: "Varun Kumar",
   publisher: "Varun Kumar",
 
   metadataBase: new URL("https://varunkumar.online"),
+
   alternates: {
     canonical: "https://varunkumar.online",
   },
@@ -75,12 +88,11 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
@@ -88,6 +100,7 @@ export default function RootLayout({
       >
         {children}
 
+        {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -113,10 +126,6 @@ export default function RootLayout({
           }}
         />
       </body>
-
-
-
-
     </html>
   );
 }
